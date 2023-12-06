@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+    /*Reset*/
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lato', sans-serif;
+      color: #1f4568;
+
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      /*background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");*/
+      background: linear-gradient(#ADD8E6, #FFFFFF);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
+    .sect {
+      padding: 60px 0;
+      position: relative;
+    }
+
+
+    .collapse {
+      display: block;
+    }
+
+
+    .btn {
+      background-color: #3a9fff;
+      border-radius: 20px;
+      padding: 10px 25px;
+      color: #fff;
+      box-shadow: 0px 18px 13px -6px rgba(0, 0, 0, 0.2);
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+    }
+
+
+
+    .btn:hover {
+      box-shadow: 0px 25px 18px -6px rgba(0, 0, 0, 0.2);
+      background-color: #63b2fc;
+      color: #fff;
+    }
+
+
+    .btn--revert {
+      background-color: transparent;
+      color: #8198ae;
+      box-shadow: none;
+      border: 1px solid #c9d9e9;
+    }
+
+    .btn--revert:hover {
+      background-color: transparent;
+      color: #1f4568;
+      box-shadow: none;
+      border: 1px solid #8198ae;
+    }
+
+    .btn--width {
+      width: 120px;
+    }
+
+
+
+    .item__img {
+      width: 25px;
+      margin-right: 10px;
+    }
+
+
+    .row--text-center {
+      text-align: center;
+
+    }
+
+    .site {
+      text-align: center;
+    }
+
+    .site__title {
+      font-size: 30px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .site__subtitle {
+      font-size: 22px;
+      color: #8198ae;
+      margin: 15px 0 40px 0;
+      text-align: center;
+    }
+
+    .site__img {
+      margin-top: 25px;
+      display: inline-block;
+      width: 65%;
+      height: 65%
+    }
+
+    .site__box-link .btn--revert {
+      margin-left: 15px;
+    }
+
+
+    /*menu header*/
+    .header {
+      padding: 5px;
+    }
+
+    .header__elenco {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .header__menu {
+      float: right;
+    }
+
+    .header__el {
+      padding: 0 25px;
+      display: inline-block;
+    }
+
+    .header__logo,
+    .header__menu {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .header__title {
+      font-size: 18px;
+      margin: 0;
+      margin-left: 10px;
+      display: inline-block;
+      line-height: 18px;
+      vertical-align: middle;
+    }
+
+    .header__light {
+      color: #8198ae;
+    }
+
+    .header__link {
+      color: #1f4568;
+      font-size: 18px;
+
+    }
+
+    .header__link:hover {
+      text-decoration: none;
+      color: #3a9fff;
+    }
+
+    .btn--up {
+      position: absolute;
+      bottom: -15px;
+      right: 25px;
+      z-index: 3;
+    }
+
+    @media screen and (max-width:1024px) {
+      .collapse {
+        display: none;
+      }
+
+      .header__container {
+        width: 100%;
+        padding: 0;
+      }
+
+      .header__menu {
+        width: 100%;
+      }
+
+      .header {
+        padding: 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 4;
+      }
+
+      .header__logo {
+        padding: 12px 20px 12px 20px;
+      }
+
+      .header__el {
+        display: block;
+        padding: 10px 20px;
+        border-top: 1px solid #ededed;
+      }
+
+
+      .header__el--blue {
+        background-color: #3a9fff;
+      }
+
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://images.vexels.com/media/users/3/239120/isolated/lists/6b96a1face3303b8f73afc8ea09dbb23-mena-a-s-tie-cut-out.png" />
+  <meta name="theme-color" content="#1885ed">
+  <title>LookPro – Fix Your Landing Page </title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <h1 class="header__title">LookPro<span class="header__light">.org</span></h1>
+      </div>
+
+      
+
+      <div class="header__menu">
+        <nav id="navbar" class="collapse">
+          <ul class="header__elenco">
+            <li class="header__el"><a href="https://calendly.com/shlokzartsharma" class="header__link">Contact us</a></li>
+            <li class="header__el"><a href="#" class="header__link"></a></li>
+            <li class="header__el"><a href="#" class="header__link"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+
+  <div class="sect">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="site">
+            
+            <h1 class="site__title">Get your landing page roasted and convert more customers.</h1>
+            <img src="LookProLP_Review.png" class="site__img">
+            <p class="site__subtitle">Your landing page isn't converting enough. <br/><br/> With our roster of seasoned marketers, copywriters, and designers, we can help. </p>
+            <div class="site__box-link">
+              <a class="btn btn--width" href="https://tally.so/r/wAB6AB">Unf*ck your landing page.</a>
+            </div>
+
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
